@@ -7,19 +7,24 @@ switch (operator) {
     case "+":
         console.log(num1 + num2);
         break;
+
     case "-":
         console.log(num1 - num2);
         break;
+
     case "*":
         console.log(num1 * num2);
         break;
+
     case "/":
-        if (num1 >= 0 && num2 !=0){
+        if (num2 !=0){
             console.log(num1 / num2);
-        } else if (num1 !=0 && num2 == 0) {
+        } 
+        else {
             console.log("Divide by zero error")
         } 
         break;
+
     default:
         console.log("Invalid operator");
     }
